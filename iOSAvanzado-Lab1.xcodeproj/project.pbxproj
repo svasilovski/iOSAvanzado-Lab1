@@ -16,6 +16,7 @@
 		7EE69D412184C95200D2B648 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE69D402184C95200D2B648 /* main.m */; };
 		7EE69D4B2184C95200D2B648 /* iOSAvanzado_Lab1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE69D4A2184C95200D2B648 /* iOSAvanzado_Lab1Tests.m */; };
 		7EE69D562184C95200D2B648 /* iOSAvanzado_Lab1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE69D552184C95200D2B648 /* iOSAvanzado_Lab1UITests.m */; };
+		7EE69D692184EE5C00D2B648 /* ResgistrarseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE69D682184EE5C00D2B648 /* ResgistrarseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		7EE69D512184C95200D2B648 /* iOSAvanzado-Lab1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOSAvanzado-Lab1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE69D552184C95200D2B648 /* iOSAvanzado_Lab1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSAvanzado_Lab1UITests.m; sourceTree = "<group>"; };
 		7EE69D572184C95200D2B648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EE69D672184EE5C00D2B648 /* ResgistrarseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResgistrarseViewController.h; sourceTree = "<group>"; };
+		7EE69D682184EE5C00D2B648 /* ResgistrarseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResgistrarseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,7 @@
 				7EE69D3F2184C95200D2B648 /* Info.plist */,
 				7EE69D402184C95200D2B648 /* main.m */,
 				7EE69D372184C94E00D2B648 /* iOSAvanzado_Lab1.xcdatamodeld */,
+				7EE69D662184EC1400D2B648 /* Registro */,
 			);
 			path = "iOSAvanzado-Lab1";
 			sourceTree = "<group>";
@@ -133,6 +137,15 @@
 				7EE69D572184C95200D2B648 /* Info.plist */,
 			);
 			path = "iOSAvanzado-Lab1UITests";
+			sourceTree = "<group>";
+		};
+		7EE69D662184EC1400D2B648 /* Registro */ = {
+			isa = PBXGroup;
+			children = (
+				7EE69D672184EE5C00D2B648 /* ResgistrarseViewController.h */,
+				7EE69D682184EE5C00D2B648 /* ResgistrarseViewController.m */,
+			);
+			path = Registro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EE69D692184EE5C00D2B648 /* ResgistrarseViewController.m in Sources */,
 				7EE69D392184C94E00D2B648 /* iOSAvanzado_Lab1.xcdatamodeld in Sources */,
 				7EE69D332184C94E00D2B648 /* ViewController.m in Sources */,
 				7EE69D412184C95200D2B648 /* main.m in Sources */,
