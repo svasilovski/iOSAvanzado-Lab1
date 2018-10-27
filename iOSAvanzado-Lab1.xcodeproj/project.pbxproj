@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E9CA13421851A24001306B5 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9CA13321851A24001306B5 /* Utility.m */; };
 		7EE69D302184C94E00D2B648 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE69D2F2184C94E00D2B648 /* AppDelegate.m */; };
 		7EE69D332184C94E00D2B648 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE69D322184C94E00D2B648 /* ViewController.m */; };
 		7EE69D362184C94E00D2B648 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EE69D342184C94E00D2B648 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 		7EE69D4B2184C95200D2B648 /* iOSAvanzado_Lab1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE69D4A2184C95200D2B648 /* iOSAvanzado_Lab1Tests.m */; };
 		7EE69D562184C95200D2B648 /* iOSAvanzado_Lab1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE69D552184C95200D2B648 /* iOSAvanzado_Lab1UITests.m */; };
 		7EE69D692184EE5C00D2B648 /* ResgistrarseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE69D682184EE5C00D2B648 /* ResgistrarseViewController.m */; };
+		7EE69D6D2185128300D2B648 /* LogeadoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE69D6C2185128300D2B648 /* LogeadoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E9CA13221851A24001306B5 /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		7E9CA13321851A24001306B5 /* Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		7EE69D2B2184C94E00D2B648 /* iOSAvanzado-Lab1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSAvanzado-Lab1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE69D2E2184C94E00D2B648 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7EE69D2F2184C94E00D2B648 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 		7EE69D572184C95200D2B648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EE69D672184EE5C00D2B648 /* ResgistrarseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResgistrarseViewController.h; sourceTree = "<group>"; };
 		7EE69D682184EE5C00D2B648 /* ResgistrarseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResgistrarseViewController.m; sourceTree = "<group>"; };
+		7EE69D6B2185128300D2B648 /* LogeadoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogeadoViewController.h; sourceTree = "<group>"; };
+		7EE69D6C2185128300D2B648 /* LogeadoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogeadoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E9CA13021851976001306B5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				7E9CA13221851A24001306B5 /* Utility.h */,
+				7E9CA13321851A24001306B5 /* Utility.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		7EE69D222184C94E00D2B648 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +121,9 @@
 		7EE69D2D2184C94E00D2B648 /* iOSAvanzado-Lab1 */ = {
 			isa = PBXGroup;
 			children = (
+				7EE69D6A2185125F00D2B648 /* Logeado */,
+				7EE69D662184EC1400D2B648 /* Registro */,
+				7E9CA13021851976001306B5 /* Utility */,
 				7EE69D2E2184C94E00D2B648 /* AppDelegate.h */,
 				7EE69D2F2184C94E00D2B648 /* AppDelegate.m */,
 				7EE69D312184C94E00D2B648 /* ViewController.h */,
@@ -116,7 +134,6 @@
 				7EE69D3F2184C95200D2B648 /* Info.plist */,
 				7EE69D402184C95200D2B648 /* main.m */,
 				7EE69D372184C94E00D2B648 /* iOSAvanzado_Lab1.xcdatamodeld */,
-				7EE69D662184EC1400D2B648 /* Registro */,
 			);
 			path = "iOSAvanzado-Lab1";
 			sourceTree = "<group>";
@@ -146,6 +163,15 @@
 				7EE69D682184EE5C00D2B648 /* ResgistrarseViewController.m */,
 			);
 			path = Registro;
+			sourceTree = "<group>";
+		};
+		7EE69D6A2185125F00D2B648 /* Logeado */ = {
+			isa = PBXGroup;
+			children = (
+				7EE69D6B2185128300D2B648 /* LogeadoViewController.h */,
+				7EE69D6C2185128300D2B648 /* LogeadoViewController.m */,
+			);
+			path = Logeado;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +308,8 @@
 				7EE69D392184C94E00D2B648 /* iOSAvanzado_Lab1.xcdatamodeld in Sources */,
 				7EE69D332184C94E00D2B648 /* ViewController.m in Sources */,
 				7EE69D412184C95200D2B648 /* main.m in Sources */,
+				7E9CA13421851A24001306B5 /* Utility.m in Sources */,
+				7EE69D6D2185128300D2B648 /* LogeadoViewController.m in Sources */,
 				7EE69D302184C94E00D2B648 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

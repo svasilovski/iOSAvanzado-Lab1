@@ -7,12 +7,15 @@
 //
 
 #import "ResgistrarseViewController.h"
+#import "Utility.h"
 
 @interface ResgistrarseViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userText;
 @property (weak, nonatomic) IBOutlet UITextField *emailText;
 @property (weak, nonatomic) IBOutlet UITextField *passwdText;
 
+@property (strong ,nonatomic) UIAlertController *alertController;
+- (void) alerta:(NSString *) titulo : (NSString *) mensaje;
 @end
 
 @implementation ResgistrarseViewController
@@ -25,7 +28,24 @@
 }
 
 #pragma mark - Navigation
+- (void) alerta:(NSString *) titulo : (NSString *) mensaje{
+    _alertController = [UIAlertController alertControllerWithTitle:titulo message:mensaje preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        // Instancio la view controller de destino
+    }];
+    [_alertController addAction:ok];
+    [self presentViewController:_alertController animated:YES completion:nil];
+    
+}
+
 - (IBAction)RegistrarseButton:(id)sender {
+    if([Utility isValidEmailAddress:_emailText.text]){
+        [[self navigationController] popViewControllerAnimated:YES];
+        //[[self navigationController] popToViewController:_alertController animated:YES]
+    }
+    else{
+        [self alerta:@"Mensaje" :@"El formato del email no es correcto."];
+    }
 }
 
 /*
